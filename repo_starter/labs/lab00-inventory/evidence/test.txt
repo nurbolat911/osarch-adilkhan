@@ -1,0 +1,9 @@
+CPU model	AMD64 Family 23 Model 160, AuthenticAMD, ~2801 MHz, 1 processor (socket)
+CPU cores / threads	Not shown by systeminfo
+Total memory	15,648 MB (about 15.6 GB)
+Memory modules / speed	Not shown by systeminfo
+Disk model / type	Not shown by systeminfo
+Free space on VM volume	Not shown by systeminfo
+Firmware type	UEFI
+Firmware version and date	American Megatrends International, LLC. E1504FA.310, 22.03.2024
+Hardware virtualization	Present and enabled (a hypervisor is running, Virtualization-based Security: Running)
