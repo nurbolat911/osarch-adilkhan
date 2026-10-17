@@ -1,0 +1,21 @@
+nurbolat@debian-os:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID: Debian
+Description:    Debian GNU/Linux 13 (trixie)
+Release:        13
+Codename:       trixie
+nurbolat@debian-os:~$ hostname
+debian-os
+nurbolat@debian-os:~$ nproc
+2
+nurbolat@debian-os:~$ free -h
+               total        used        free      shared  buff/cache   available
+Mem:           3,8Gi       342Mi       3,5Gi       676Ki       139Mi       3,5Gi
+Swap:          2,1Gi          0B       2,1Gi
+nurbolat@debian-os:~$ df -h /
+Файловая система Размер Использовано  Дост Использовано% Смонтировано в
+/dev/sda1           38G         3,2G   33G            9% /
+nurbolat@debian-os:~$ ip -br a
+lo               UNKNOWN        127.0.0.1/8 ::1/128
+enp0s3           DOWN
+nurbolat@debian-os:~$
