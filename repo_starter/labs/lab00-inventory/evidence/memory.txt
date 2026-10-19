@@ -1,0 +1,7 @@
+﻿
+DeviceLocator Manufacturer Capacity (GB) Speed
+------------- ------------ ------------- -----
+DIMM 0        Unknown                  8  5500
+DIMM 0        Unknown                  8  5500
+
+
