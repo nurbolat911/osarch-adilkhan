@@ -1,0 +1,8 @@
+﻿
+
+Name                      : AMD Ryzen 5 7520U with Radeon Graphics         
+NumberOfCores             : 4
+NumberOfLogicalProcessors : 8
+
+
+
