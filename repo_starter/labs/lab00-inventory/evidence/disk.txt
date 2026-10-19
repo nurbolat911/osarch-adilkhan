@@ -1,0 +1,16 @@
+﻿=== PHYSICAL DISKS ===
+
+FriendlyName               MediaType BusType
+------------               --------- -------
+SAMSUNG MZVL4512HBLU-00BTW SSD       NVMe   
+
+
+
+=== VOLUMES (FREE SPACE) ===
+
+DriveLetter FreeSpace (GB) TotalSize (GB)
+----------- -------------- --------------
+          C         243,98         377,28
+                      0,08           0,93
+
+
