@@ -1,7 +1,8 @@
 
 # Lab 2 — A Windows guest, and a network between them
 
-Pair: Nurbolat Adilkhan / Solo   Driver first half: Nurbolat Adilkhan
+Pair: Nurbolat Adilkhan / Solo 
+Driver first half: Nurbolat Adilkhan
 Machine: Laptop running Windows 11 (AMD Ryzen 5, 4 cores/8 threads, 16 GB DDR4 RAM), guests Debian GNU/Linux (lab01-ubuntu) + Windows 11 Enterprise eval (lab02-windows)
 Date: 26.10.2026
 
