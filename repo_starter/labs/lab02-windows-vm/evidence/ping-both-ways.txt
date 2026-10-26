@@ -1,0 +1,60 @@
+=== 1. Windows -> Linux (10.0.2.3) ===
+PS C:\Users\nurbolat> ping 10.0.2.3
+
+Pinging 10.0.2.3 with 32 bytes of data:
+Reply from 10.0.2.3: bytes=32 time=3ms TTL=64
+Reply from 10.0.2.3: bytes=32 time=1ms TTL=64
+Reply from 10.0.2.3: bytes=32 time=1ms TTL=64
+Reply from 10.0.2.3: bytes=32 time=2ms TTL=64
+
+Ping statistics for 10.0.2.3:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 1ms, Maximum = 3ms, Average = 1ms
+
+
+=== 2. Windows -> Internet (ubuntu.com) ===
+PS C:\Users\nurbolat> ping ubuntu.com
+
+Pinging ubuntu.com [185.125.190.20] with 32 bytes of data:
+Reply from 185.125.190.20: bytes=32 time=766ms TTL=128
+Reply from 185.125.190.20: bytes=32 time=886ms TTL=128
+Reply from 185.125.190.20: bytes=32 time=1054ms TTL=128
+
+Ping statistics for 185.125.190.20:
+    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 766ms, Maximum = 1054ms, Average = 902ms
+
+
+=== 3. Linux -> Windows (10.0.2.4) Before & After Firewall Rule ===
+--- Before rule (Firewall blocked ICMP) ---
+nurbolat@localhost:~$ ping -c 4 10.0.2.4
+PING 10.0.2.4 (10.0.2.4) 56(84) bytes of data.
+
+--- 10.0.2.4 ping statistics ---
+4 packets transmitted, 0 received, 100% packet loss, time 3065ms
+
+--- After rule (Allow ping in ICMPv4) ---
+nurbolat@localhost:~$ ping -c 4 10.0.2.4
+PING 10.0.2.4 (10.0.2.4) 56(84) bytes of data.
+64 bytes from 10.0.2.4: icmp_seq=1 ttl=128 time=1.95 ms
+64 bytes from 10.0.2.4: icmp_seq=2 ttl=128 time=1.23 ms
+64 bytes from 10.0.2.4: icmp_seq=3 ttl=128 time=2.32 ms
+64 bytes from 10.0.2.4: icmp_seq=4 ttl=128 time=0.907 ms
+
+--- 10.0.2.4 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3007ms
+rtt min/avg/max/mdev = 0.907/1.599/2.317/0.560 ms
+
+
+=== 4. Linux -> Internet (ubuntu.com) ===
+nurbolat@localhost:~$ ping -c 4 ubuntu.com
+PING ubuntu.com (185.125.190.20) 56(84) bytes of data.
+64 bytes from website-content-cache-1.ps5.canonical.com (185.125.190.20): icmp_seq=1 ttl=64 time=661 ms
+64 bytes from website-content-cache-1.ps5.canonical.com (185.125.190.20): icmp_seq=3 ttl=64 time=731 ms
+64 bytes from website-content-cache-1.ps5.canonical.com (185.125.190.20): icmp_seq=4 ttl=64 time=744 ms
+
+--- ubuntu.com ping statistics ---
+4 packets transmitted, 3 received, 25% packet loss, time 3017ms
+rtt min/avg/max/mdev = 660.854/711.821/743.647/36.409 ms
