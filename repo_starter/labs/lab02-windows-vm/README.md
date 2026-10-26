@@ -41,12 +41,9 @@ When pinging Windows from Debian (`ping -c 4 10.0.2.4`), packets timed out with 
 
 ## Evidence
 
-* [evidence/ipconfig-windows.txt](https://www.google.com/search?q=evidence/ipconfig-windows.txt) — Windows address
-* [evidence/ip-addr-linux.txt](https://www.google.com/search?q=evidence/ip-addr-linux.txt) — Ubuntu address
-* [evidence/ping-both-ways.txt](https://www.google.com/search?q=evidence/ping-both-ways.txt) — both directions and the internet
-* [evidence/host-memory-before.png](https://www.google.com/search?q=evidence/host-memory-before.png) — host memory, guests off
-* [evidence/host-memory-after.png](https://www.google.com/search?q=evidence/host-memory-after.png) — host memory, both guests overcommitted
-
-```
-
-```
+## Evidence
+- [evidence/ipconfig-windows.txt](./evidence/ipconfig-windows.txt) — Windows address
+- [evidence/ip-addr-linux.txt](./evidence/ip-addr-linux.txt) — Ubuntu address
+- [evidence/ping-both-ways.txt](./evidence/ping-both-ways.txt) — both directions and the internet
+- [evidence/host-memory-before.png](./evidence/host-memory-before.png) — host memory, guests off
+- [evidence/host-memory-after.png](./evidence/host-memory-after.png) — host memory, both guests overcommitted
