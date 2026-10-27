@@ -6,7 +6,7 @@ Date: 27.10.2026
 
 ## What I did
 1. Installed Oracle VM VirtualBox 7.1. Licence: https://www.virtualbox.org/wiki/VirtualBox_PUEL
-2. Created VM lab01-ubuntu (Debian-OS): 2 vCPU, 2048 MB RAM, 25 GB dynamic disk, NAT Network (10.0.2.0/24).
+2. Created VM lab01-ubuntu (Debian-OS): 2 vCPU, 2048 MB RAM, 40 GB dynamic disk, NAT Network (10.0.2.0/24).
 3. Installed Debian GNU/Linux 13 (trixie), set persistent hostname to `debian-os`, verified active network, powered off cleanly, and took snapshot `clean-install`.
 4. Broke it persistently: commented out the interface lines in `/etc/network/interfaces` (`# auto enp0s3`, `# iface enp0s3 inet dhcp`) and rebooted (`sudo reboot`). Verified persistent failure across reboot: `cat /etc/network/interfaces`, `ip -br a` (enp0s3 DOWN), and `ping -c 2 1.1.1.1` (Network is unreachable).
 5. Rolled back to clean-install: shut down VM (`sudo poweroff`), restored snapshot `clean-install` in VirtualBox, booted up, and proved successful rollback: `/etc/network/interfaces` is restored, `ip -br a` shows `enp0s3` UP with IP `10.0.2.3`, and `ping -c 4 debian.org` succeeds with 0% packet loss.
