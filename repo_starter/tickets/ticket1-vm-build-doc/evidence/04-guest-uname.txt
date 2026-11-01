@@ -1,0 +1,13 @@
+nurbolat@debian-os:~$ uname -a
+Linux debian-os 6.12.107+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64 GNU/Linux
+
+nurbolat@debian-os:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Debian
+Description:	Debian GNU/Linux 13 (trixie)
+Release:	13
+Codename:	trixie
+
+nurbolat@debian-os:~$ ip -br a
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+enp0s3           UP             10.0.2.3/24 fe80::24af:5f5f:e2:5bea/64
