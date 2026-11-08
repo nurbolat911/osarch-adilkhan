@@ -1,0 +1,181 @@
+nurbolat@NurbolatPC:~$ sudo apt install -y dmidecode
+[sudo: authenticate] Пароль:         
+Уже установлен пакет dmidecode самой новой версии (3.6-2ubuntu1). 
+Сводка:                                              
+  Обновление: 0, Установка: 0, Удаление: 0, Пропуск обновления: 83
+nurbolat@NurbolatPC:~$ (for c in "lscpu" "free -h" "sudo dmidecode -t memory" "lsblk -d -o NAME,MODEL,ROTA,TRAN,SIZE" "df -h /" "uname -m"; do echo "\$ $c"; eval "$c"; echo; done) 2>&1 | tee linux-specs.txt
+$ lscpu
+Архитектура:                             x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           44 bits physical, 48 bits virtual
+Порядок байт:                            Little Endian
+CPU(s):                                  8
+On-line CPU(s) list:                     0-7
+ID прроизводителя:                       AuthenticAMD
+Имя модели:                              AMD Ryzen 5 7520U with Radeon Graphics
+Семейство ЦПУ:                           23
+Модель:                                  160
+Потоков на ядро:                         2
+Ядер на сокет:                           4
+Сокетов:                                 1
+Степпинг:                                0
+Frequency boost:                         enabled
+CPU(s) scaling MHz:                      87%
+CPU max MHz:                             4386,4722
+CPU min MHz:                             422,7930
+BogoMIPS:                                5588,86
+Флаги:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr rdpru wbnoinvd cppc arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip rdpid overflow_recov succor smca sev sev_es
+Виртуализация:                           AMD-V
+L1d cache:                               128 KiB (4 instances)
+L1i cache:                               128 KiB (4 instances)
+L2 cache:                                2 MiB (4 instances)
+L3 cache:                                4 MiB (1 instance)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-7
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Ghostwrite:                Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Old microcode:             Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Mitigation; untrained return thunk; SMT enabled with STIBP protection
+Vulnerability Spec rstack overflow:      Mitigation; Safe RET
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspace
+
+$ free -h
+               всего        занят        своб      общая  буф/врем.   доступно
+Память:         14Gi       3,5Gi       8,4Gi       106Mi       2,9Gi        10Gi
+Подкачка:      4,0Gi          0B       4,0Gi
+
+$ sudo dmidecode -t memory
+# dmidecode 3.6
+Getting SMBIOS data from sysfs.
+SMBIOS 3.5.0 present.
+
+Handle 0x0011, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 64 GB
+	Error Information Handle: 0x0010
+	Number Of Devices: 2
+
+Handle 0x0014, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0011
+	Error Information Handle: 0x0013
+	Total Width: 32 bits
+	Data Width: 32 bits
+	Size: 8 GB
+	Form Factor: Other
+	Set: None
+	Locator: DIMM 0
+	Bank Locator: P0 CHANNEL A
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 5500 MT/s
+	Manufacturer: Unknown
+	Serial Number: 00000000
+	Asset Tag: Not Specified
+	Part Number: MT62F2G32D4DS-026 WT
+	Rank: 2
+	Configured Memory Speed: 5500 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 0.5 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 8 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0017, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0011
+	Error Information Handle: 0x0016
+	Total Width: 32 bits
+	Data Width: 32 bits
+	Size: 8 GB
+	Form Factor: Other
+	Set: None
+	Locator: DIMM 0
+	Bank Locator: P0 CHANNEL B
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 5500 MT/s
+	Manufacturer: Unknown
+	Serial Number: 00000000
+	Asset Tag: Not Specified
+	Part Number: MT62F2G32D4DS-026 WT
+	Rank: 2
+	Configured Memory Speed: 5500 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 0.5 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 8 GB
+	Cache Size: None
+	Logical Size: None
+
+
+$ lsblk -d -o NAME,MODEL,ROTA,TRAN,SIZE
+NAME    MODEL                      ROTA TRAN     SIZE
+loop0                                 0            4K
+loop1                                 0        529,8M
+loop2                                 0        543,3M
+loop3                                 0         63,8M
+loop4                                 0         63,8M
+loop5                                 0         66,8M
+loop6                                 0         66,8M
+loop7                                 0         14,2M
+loop8                                 0         14,2M
+loop9                                 0        262,3M
+loop10                                0        261,4M
+loop11                                0         12,7M
+loop12                                0         12,7M
+loop13                                0        606,1M
+loop14                                0         91,7M
+loop15                                0          395M
+loop16                                0          402M
+loop17                                0         18,8M
+loop18                                0         18,4M
+loop19                                0         11,8M
+loop20                                0         50,3M
+loop21                                0         15,7M
+loop22                                0         44,7M
+loop23                                0          580K
+loop24                                0          828K
+nvme0n1 SAMSUNG MZVL4512HBLU-00BTW    0 nvme   476,9G
+
+$ df -h /
+Файл.система   Размер Использовано  Дост Использовано% Cмонтировано в
+/dev/nvme0n1p5    96G          34G   58G           38% /
+
+$ uname -m
+x86_64
+
+nurbolat@NurbolatPC:~$
