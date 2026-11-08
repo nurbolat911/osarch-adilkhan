@@ -68,13 +68,15 @@ Source: https://www.msi.com/Motherboard/PRO-B760M-A-WIFI-DDR4 · Specification: 
 Source: https://www.kingston.com/en/memory/gaming/kingston-fury-beast-ddr5-memory · Datasheet: https://www.kingston.com/datasheets/KF556C40BB-16.pdf
 
 ### 6. Crucial DDR4-3200, 16 GB DIMM
-![Crucial page: error 429](evidence/photos/crucial-error-429.png)
+![Crucial 16GB DDR4-3200 UDIMM product page](evidence/photos/crucial-ddr4-3200.png)
+![Crucial 16GB DDR4-3200 UDIMM specifications](evidence/photos/crucial-ddr4-3200-specs.png)
 
-**What I could not do:** the maker's page returned "Error 429 - Too Many Requests" and "The requested URL was rejected" in my browser every time I opened it (more in "What did not work"). So I do not have a spec table from Crucial.
-**What I can say from the task and from the DDR4 standard:** the part is a 16 GB DDR4-3200 desktop DIMM (task statement: "Crucial DDR4-3200, 16 GB DIMM"). DDR4 desktop DIMMs have 288 pins and a different key notch from DDR5 (general knowledge, not read from the Crucial page).
-**Connects to:** a DDR4 DIMM slot. It matches the MSI board, whose JEDEC speed is 3200, and the i5-13400, whose maximum DDR4 speed is 3200 MT/s.
-**Limit:** only DDR4 boards.
-Source (page that was blocked): https://www.crucial.com/memory/ddr4/ct16g4dfra32a
+These two screenshots were taken on Linux (Ubuntu, Chrome), because the page did not open on Windows (see "What did not work").
+
+**What it is:** Crucial 16GB DDR4-3200 UDIMM, part number CT16G4DFRA32A, Classic series. Technology DDR4, module type **UDIMM** (unbuffered desktop DIMM), 16 GB, single module (kit quantity 1), **1.2 V**, speed **DDR4-3200**, CAS latency 22 (default JEDEC timings 22-22-22), die density 8 Gb or 16 Gb, limited lifetime warranty. The page does not list the pin count; DDR4 desktop DIMMs have 288 pins (general knowledge, not read from this page).
+**Connects to:** a DDR4 DIMM slot on a desktop board, one module per channel. It matches the MSI board (DDR4, 3200 MHz JEDEC) and the i5-13400 (maximum DDR4 speed 3200 MT/s).
+**Limit:** fits only DDR4 boards (the key notch is in a different place than on DDR5, and the voltage is 1.2 V against 1.1 V for DDR5). It is a UDIMM, so it does not go into a laptop SO-DIMM slot.
+Source: https://www.crucial.com/memory/ddr4/ct16g4dfra32a
 
 ### 7. Samsung 990 PRO 1 TB
 ![Samsung 990 PRO product page](evidence/photos/samsung-990-pro.png)
@@ -132,7 +134,7 @@ I decided by facts: the processors need different sockets (AM5 and LGA 1700), so
 |---|---|---|
 | Processor | Intel Core i5-13400 | Socket LGA 1700 |
 | Motherboard | MSI PRO B760M-A WIFI DDR4 | LGA 1700, B760; MSI lists the i5-13400 (steppings B0 and C0) |
-| Memory | Crucial DDR4-3200, 16 GB | The board has 4 DDR4 slots (3200 JEDEC); the i5-13400 supports DDR4 up to 3200 MT/s |
+| Memory | Crucial DDR4-3200, 16 GB | The board has 4 DDR4 slots (3200 JEDEC); the i5-13400 supports DDR4 up to 3200 MT/s; the module is a 1.2 V unbuffered UDIMM, the desktop type the board takes |
 | SSD | Samsung 870 EVO 1 TB | SATA 6 Gb/s; the board has 4 SATA ports (SATA data cable and power cable are needed) |
 | Power supply | Corsair RM750e (750 W) | There is only one power supply in the list, and the AMD build already has its cooler, so I put it here; 750 W, modular, ATX 3.1 |
 
@@ -163,7 +165,7 @@ The same output also shows `HealthStatus: Warning` and `OperationalStatus: Scan 
 
 ## What did not work the first time
 
-1. **Crucial's page would not open.** I opened https://www.crucial.com/memory/ddr4/ct16g4dfra32a and got the plain error page "The requested URL was rejected" with "Error 429 - Too Many Requests" (support ID 6f13c84b-4d27-4fd4-ac79-5fa74ba0cb5f, F5 site fr4-fra). A 429 means the site refused me for sending too many requests, and the rejection comes from the site's protection, not from my network settings. I tried again later and the page was still rejected. I did not use a shop page instead, because the lab says facts copied from a shop page are not evidence. I saved a screenshot of the error and wrote the Crucial caption only with what I can support (see part 6).
+1. **Crucial's page would not open on Windows.** I opened https://www.crucial.com/memory/ddr4/ct16g4dfra32a in Chrome on Windows and got the plain error page "The requested URL was rejected" with "Error 429 - Too Many Requests" (support ID 6f13c84b-4d27-4fd4-ac79-5fa74ba0cb5f, F5 site fr4-fra), see [evidence/photos/crucial-error-429.png](evidence/photos/crucial-error-429.png). A 429 means the site refused too many requests, so I assumed the site's protection was blocking me and not my network settings. I did not use a shop page instead, because the lab says facts copied from a shop page are not evidence. Later I opened the same link in Chrome on Ubuntu (my dual boot) and the page loaded, so I took the screenshots there. I do not know why the two systems behaved differently.
 2. **A confusing memory type.** I expected `dmidecode` to confirm the memory type, but it printed "Type: DDR4" next to 5500 MT/s and 0.5 V. This did not fit together, so I compared it with the Windows output (same code 26) and with the part number and the form factor. It turned out to be a label in the firmware table that cannot be trusted. I describe this above in part 2.
 3. **Screenshots I had to redo.** My first AMD screenshot was a whole page shrunk into one image, so the text was too small to read. I took it again as two normal windows with the specification rows in view. While checking this folder I also found that the two files named `samsung-870-evo*.png` actually contained the Samsung 990 PRO pages. I renamed them to `samsung-990-pro*.png` and took the real 870 EVO pages.
 
@@ -174,7 +176,8 @@ The same output also shows `HealthStatus: Warning` and `OperationalStatus: Scan 
 - [evidence/photos/asus-b650m-a.png](evidence/photos/asus-b650m-a.png), [asus-b650m-a-techspec-cpu-chipset.png](evidence/photos/asus-b650m-a-techspec-cpu-chipset.png), [asus-b650m-a-techspec-memory-storage.png](evidence/photos/asus-b650m-a-techspec-memory-storage.png), [asus-b650m-a-cpu-support.png](evidence/photos/asus-b650m-a-cpu-support.png) — ASUS board: AM5, B650, DDR5 slots, M.2 and SATA, CPU support list with the 7600.
 - [evidence/photos/msi-b760m-a-wifi-ddr4.png](evidence/photos/msi-b760m-a-wifi-ddr4.png), [msi-specs-cpu-chipset.png](evidence/photos/msi-specs-cpu-chipset.png), [msi-specs-memory-storage.png](evidence/photos/msi-specs-memory-storage.png), [msi-cpu-support.png](evidence/photos/msi-cpu-support.png) — MSI board: LGA 1700, B760, DDR4 slots, M.2 and SATA, compatibility list with the i5-13400.
 - [evidence/photos/kingston-fury-beast-ddr5.png](evidence/photos/kingston-fury-beast-ddr5.png), [kingston-fury-beast-ddr5-datasheet.png](evidence/photos/kingston-fury-beast-ddr5-datasheet.png) — Kingston product page and datasheet: DDR5, 288 pins, 5600 CL40.
-- [evidence/photos/crucial-error-429.png](evidence/photos/crucial-error-429.png) — proof that the Crucial page was rejected.
+- [evidence/photos/crucial-ddr4-3200.png](evidence/photos/crucial-ddr4-3200.png), [crucial-ddr4-3200-specs.png](evidence/photos/crucial-ddr4-3200-specs.png) — Crucial's page (taken on Ubuntu): DDR4, UDIMM, 16 GB, 1.2 V, DDR4-3200.
+- [evidence/photos/crucial-error-429.png](evidence/photos/crucial-error-429.png) — the error the same page showed on Windows.
 - [evidence/photos/samsung-990-pro.png](evidence/photos/samsung-990-pro.png), [samsung-990-pro-specs.png](evidence/photos/samsung-990-pro-specs.png) — M.2 2280, PCIe 4.0 x4.
 - [evidence/photos/samsung-870-evo.png](evidence/photos/samsung-870-evo.png), [samsung-870-evo-specs.png](evidence/photos/samsung-870-evo-specs.png) — 2.5 inch, SATA 6 Gb/s.
 - [evidence/photos/corsair-rm750e.png](evidence/photos/corsair-rm750e.png), [corsair-rm750e-specs.png](evidence/photos/corsair-rm750e-specs.png) — 750 W, 80 PLUS Gold, ATX 3.1, fully modular.
