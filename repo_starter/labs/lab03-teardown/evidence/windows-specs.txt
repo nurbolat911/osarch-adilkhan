@@ -1,1 +1,78 @@
+$ Get-CimInstance Win32_Processor | Select Name, NumberOfCores, NumberOfLogicalProcessors, MaxClockSpeed | Format-List
 
+
+Name                      : AMD Ryzen 5 7520U with Radeon Graphics         
+NumberOfCores             : 4
+NumberOfLogicalProcessors : 8
+MaxClockSpeed             : 2801
+
+
+
+
+
+$ Get-CimInstance Win32_PhysicalMemory | Select DeviceLocator, Capacity, Speed, ConfiguredClockSpeed, SMBIOSMemoryType, FormFactor | Format-List
+
+
+DeviceLocator        : DIMM 0
+Capacity             : 8589934592
+Speed                : 5500
+ConfiguredClockSpeed : 5500
+SMBIOSMemoryType     : 26
+FormFactor           : 1
+
+DeviceLocator        : DIMM 0
+Capacity             : 8589934592
+Speed                : 5500
+ConfiguredClockSpeed : 5500
+SMBIOSMemoryType     : 26
+FormFactor           : 1
+
+
+
+
+
+$ Get-PhysicalDisk | Select FriendlyName, MediaType, BusType, Size | Format-List
+
+
+FriendlyName : SAMSUNG MZVL4512HBLU-00BTW
+MediaType    : SSD
+BusType      : NVMe
+Size         : 512110190592
+
+
+
+
+
+$ Get-Volume C | Format-List
+
+
+ObjectId             : {1}\\DESKTOP-4NU4645\root/Microsoft/Windows/Storage/
+                       Providers_v2\WSP_Volume.ObjectId="{f8d25f5e-bbaa-11e
+                       f-994f-806e6f6e6963}:VO:\\?\Volume{7bfab04a-c583-414
+                       8-90ea-74203a6c42e7}\"
+PassThroughClass     : 
+PassThroughIds       : 
+PassThroughNamespace : 
+PassThroughServer    : 
+UniqueId             : \\?\Volume{7bfab04a-c583-4148-90ea-74203a6c42e7}\
+AllocationUnitSize   : 4096
+DedupMode            : NotAvailable
+DriveLetter          : C
+DriveType            : Fixed
+FileSystem           : NTFS
+FileSystemLabel      : 
+FileSystemType       : NTFS
+HealthStatus         : Warning
+OperationalStatus    : Scan Needed
+Path                 : \\?\Volume{7bfab04a-c583-4148-90ea-74203a6c42e7}\
+ReFSDedupMode        : NotAvailable
+Size                 : 405099507712
+SizeRemaining        : 221199261696
+PSComputerName       : 
+
+
+
+
+
+$ $env:PROCESSOR_ARCHITECTURE
+AMD64
