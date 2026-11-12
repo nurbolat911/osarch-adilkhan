@@ -1,0 +1,10 @@
+$ lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINTS
+NAME    SIZE TYPE FSTYPE  MOUNTPOINTS
+sda    40,3G disk         
+├─sda1 38,2G part ext4    /
+├─sda2    1K part         
+└─sda5  2,1G part swap    [SWAP]
+sdb       1G disk         
+sdc       1G disk         
+sdd       1G disk         
+sr0    50,7M rom  iso9660 
