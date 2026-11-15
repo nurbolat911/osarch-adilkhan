@@ -1,0 +1,18 @@
+$ ps -o pid,ppid,user,rss,vsz,nlwp,cmd -p 1362
+    PID    PPID USER       RSS    VSZ NLWP CMD
+   1362    1334 nurbolat  2800   7912    1 ping 127.0.0.1
+
+$ parent:
+    PID    PPID CMD
+   1334    1333 -bash
+
+$ ls /proc/1362/fd | wc -l
+5
+
+$ sudo ls -l /proc/1362/fd
+итого 0
+lrwx------ 1 nurbolat nurbolat 64 ноя 15 19:26 0 -> /dev/pts/0
+l-wx------ 1 nurbolat nurbolat 64 ноя 15 19:26 1 -> /dev/null
+lrwx------ 1 nurbolat nurbolat 64 ноя 15 19:26 2 -> /dev/pts/0
+lrwx------ 1 nurbolat nurbolat 64 ноя 15 19:26 3 -> socket:[12474]
+lrwx------ 1 nurbolat nurbolat 64 ноя 15 19:26 4 -> socket:[12475]

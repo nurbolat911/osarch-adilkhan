@@ -1,0 +1,69 @@
+ноя 15 20:42:52 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+ноя 15 20:42:52 debian-os kernel: Out of memory: Killed process 1917 (stress-ng-vm) total-vm:1122468kB, anon-rss:1068084kB, file-rss:56kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:42:53 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_COMP|__GFP_ZERO), order=0, oom_score_adj=1000
+ноя 15 20:42:53 debian-os kernel: Out of memory: Killed process 1918 (stress-ng-vm) total-vm:1122468kB, anon-rss:1039504kB, file-rss:184kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:42:54 debian-os kernel: gmain invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=0
+ноя 15 20:42:54 debian-os kernel: Out of memory: Killed process 1924 (stress-ng-vm) total-vm:1122468kB, anon-rss:1068176kB, file-rss:40kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:42:54 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_COMP|__GFP_ZERO), order=0, oom_score_adj=1000
+ноя 15 20:42:55 debian-os kernel: Out of memory: Killed process 1919 (stress-ng-vm) total-vm:1122468kB, anon-rss:1068080kB, file-rss:0kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:42:55 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_COMP|__GFP_ZERO), order=0, oom_score_adj=1000
+ноя 15 20:42:55 debian-os kernel: Out of memory: Killed process 1926 (stress-ng-vm) total-vm:1122468kB, anon-rss:1046544kB, file-rss:28kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:42:57 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+ноя 15 20:42:57 debian-os kernel: Out of memory: Killed process 1927 (stress-ng-vm) total-vm:1122468kB, anon-rss:1068004kB, file-rss:0kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:42:57 debian-os kernel: systemd-journal invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=-250
+ноя 15 20:42:57 debian-os kernel: Out of memory: Killed process 1928 (stress-ng-vm) total-vm:1122468kB, anon-rss:947824kB, file-rss:0kB, shmem-rss:0kB, UID:1000 pgtables:1932kB oom_score_adj:1000
+ноя 15 20:42:58 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_COMP|__GFP_ZERO), order=0, oom_score_adj=1000
+ноя 15 20:42:58 debian-os kernel: Out of memory: Killed process 1933 (stress-ng-vm) total-vm:1122468kB, anon-rss:1064464kB, file-rss:4kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:42:59 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+ноя 15 20:42:59 debian-os kernel: Out of memory: Killed process 1932 (stress-ng-vm) total-vm:1122468kB, anon-rss:1068008kB, file-rss:116kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:42:59 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+ноя 15 20:42:59 debian-os kernel: Out of memory: Killed process 1934 (stress-ng-vm) total-vm:1122468kB, anon-rss:1068176kB, file-rss:136kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:43:01 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+ноя 15 20:43:01 debian-os kernel: Out of memory: Killed process 1939 (stress-ng-vm) total-vm:1122468kB, anon-rss:1068176kB, file-rss:0kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:43:01 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_COMP|__GFP_ZERO), order=0, oom_score_adj=1000
+ноя 15 20:43:01 debian-os kernel: Out of memory: Killed process 1936 (stress-ng-vm) total-vm:1122468kB, anon-rss:1068004kB, file-rss:4kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:43:03 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_COMP|__GFP_ZERO), order=0, oom_score_adj=1000
+ноя 15 20:43:03 debian-os kernel: Out of memory: Killed process 1941 (stress-ng-vm) total-vm:1122468kB, anon-rss:994576kB, file-rss:0kB, shmem-rss:0kB, UID:1000 pgtables:2024kB oom_score_adj:1000
+ноя 15 20:43:03 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_COMP|__GFP_ZERO), order=0, oom_score_adj=1000
+ноя 15 20:43:03 debian-os kernel: Out of memory: Killed process 1940 (stress-ng-vm) total-vm:1122468kB, anon-rss:927120kB, file-rss:76kB, shmem-rss:0kB, UID:1000 pgtables:1892kB oom_score_adj:1000
+ноя 15 20:43:04 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_COMP|__GFP_ZERO), order=0, oom_score_adj=1000
+ноя 15 20:43:04 debian-os kernel: Out of memory: Killed process 1946 (stress-ng-vm) total-vm:1122468kB, anon-rss:1068048kB, file-rss:8kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:43:05 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_COMP|__GFP_ZERO), order=0, oom_score_adj=1000
+ноя 15 20:43:05 debian-os kernel: Out of memory: Killed process 1945 (stress-ng-vm) total-vm:1122468kB, anon-rss:1068084kB, file-rss:48kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:43:09 debian-os kernel: sleep invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=0
+ноя 15 20:43:09 debian-os kernel: Out of memory: Killed process 1947 (stress-ng-vm) total-vm:1122468kB, anon-rss:1068176kB, file-rss:52kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:43:09 debian-os kernel: oom_reaper: reaped process 1947 (stress-ng-vm), now anon-rss:0kB, file-rss:52kB, shmem-rss:0kB
+ноя 15 20:43:10 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_COMP|__GFP_ZERO), order=0, oom_score_adj=1000
+ноя 15 20:43:10 debian-os kernel: Out of memory: Killed process 1950 (stress-ng-vm) total-vm:1122468kB, anon-rss:1057936kB, file-rss:156kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:43:10 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_COMP|__GFP_ZERO), order=0, oom_score_adj=1000
+ноя 15 20:43:11 debian-os kernel: Out of memory: Killed process 1948 (stress-ng-vm) total-vm:1122468kB, anon-rss:1067960kB, file-rss:72kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:43:11 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_COMP|__GFP_ZERO), order=0, oom_score_adj=1000
+ноя 15 20:43:11 debian-os kernel: Out of memory: Killed process 1953 (stress-ng-vm) total-vm:1122468kB, anon-rss:982160kB, file-rss:136kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:43:12 debian-os kernel: systemd-journal invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=-250
+ноя 15 20:43:12 debian-os kernel: Out of memory: Killed process 1955 (stress-ng-vm) total-vm:1122468kB, anon-rss:1046032kB, file-rss:68kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:43:13 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+ноя 15 20:43:13 debian-os kernel: Out of memory: Killed process 1954 (stress-ng-vm) total-vm:1122468kB, anon-rss:1068084kB, file-rss:100kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:43:13 debian-os kernel: systemd-journal invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=-250
+ноя 15 20:43:13 debian-os kernel: Out of memory: Killed process 1956 (stress-ng-vm) total-vm:1122468kB, anon-rss:1068176kB, file-rss:12kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:43:14 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_COMP|__GFP_ZERO), order=0, oom_score_adj=1000
+ноя 15 20:43:14 debian-os kernel: Out of memory: Killed process 1961 (stress-ng-vm) total-vm:1122468kB, anon-rss:1068176kB, file-rss:136kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:43:15 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_COMP|__GFP_ZERO), order=0, oom_score_adj=1000
+ноя 15 20:43:15 debian-os kernel: Out of memory: Killed process 1960 (stress-ng-vm) total-vm:1122468kB, anon-rss:1068004kB, file-rss:0kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:43:16 debian-os kernel: systemd-journal invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=-250
+ноя 15 20:43:16 debian-os kernel: Out of memory: Killed process 1962 (stress-ng-vm) total-vm:1122468kB, anon-rss:1068048kB, file-rss:0kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:43:17 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_COMP|__GFP_ZERO), order=0, oom_score_adj=1000
+ноя 15 20:43:17 debian-os kernel: Out of memory: Killed process 1966 (stress-ng-vm) total-vm:1122468kB, anon-rss:1068176kB, file-rss:32kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:43:18 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+ноя 15 20:43:18 debian-os kernel: Out of memory: Killed process 1963 (stress-ng-vm) total-vm:1122468kB, anon-rss:1068000kB, file-rss:24kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:43:18 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_COMP|__GFP_ZERO), order=0, oom_score_adj=1000
+ноя 15 20:43:18 debian-os kernel: Out of memory: Killed process 1968 (stress-ng-vm) total-vm:1122468kB, anon-rss:980624kB, file-rss:36kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:43:19 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+ноя 15 20:43:19 debian-os kernel: Out of memory: Killed process 1970 (stress-ng-vm) total-vm:1122468kB, anon-rss:997264kB, file-rss:0kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:43:20 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+ноя 15 20:43:20 debian-os kernel: Out of memory: Killed process 1969 (stress-ng-vm) total-vm:1122468kB, anon-rss:1068084kB, file-rss:72kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:43:20 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+ноя 15 20:43:21 debian-os kernel: Out of memory: Killed process 1974 (stress-ng-vm) total-vm:1122468kB, anon-rss:1068048kB, file-rss:12kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:44:44 debian-os kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_COMP|__GFP_ZERO), order=0, oom_score_adj=1000
+ноя 15 20:44:44 debian-os kernel: Out of memory: Killed process 1975 (stress-ng-vm) total-vm:1122468kB, anon-rss:1067992kB, file-rss:56kB, shmem-rss:0kB, UID:1000 pgtables:2164kB oom_score_adj:1000
+ноя 15 20:44:44 debian-os kernel: watchdog: BUG: soft lockup - CPU#0 stuck for 76s! [sshd-session:934]
+ноя 15 20:44:44 debian-os kernel: oom_reaper: reaped process 1975 (stress-ng-vm), now anon-rss:0kB, file-rss:56kB, shmem-rss:0kB
