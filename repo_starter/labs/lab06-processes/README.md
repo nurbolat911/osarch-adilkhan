@@ -4,7 +4,7 @@ Pair: Nurbolat Adilkhan / Solo · Date: 15.11.2026 · Guests: Debian GNU/Linux 1
 
 ## Part 1 — One process, three tools
 
-**Process chosen: `ping`.** It exists on both guests (`PING.EXE` on Windows, `ping` on Debian), it needs no installation, and it runs for as long as I want (`ping -t 127.0.0.1` on Windows, `ping 127.0.0.1 > /dev/null &` on Debian). `VBoxService`, the first suggestion, is not running in my Debian guest (`pgrep -a VBoxService` printed nothing), so I used `ping` on both sides. I looked at both instances at about the same time.
+**Process chosen: `ping`.** It exists on both guests (`PING.EXE` on Windows, `ping` on Debian), it needs no installation, and it runs for as long as I want (`ping -t 127.0.0.1` on Windows, `ping 127.0.0.1 > /dev/null &` on Debian). `VBoxService`, the first suggestion, is not running in my Debian guest (`pgrep -a VBoxService` printed nothing), so I used `ping` on both sides. ping ran on both guests during the same session; the htop screenshot was taken at 14:31 and the Windows screenshots at 15:03–15:05, with ping running all the time..
 
 Screenshots: [evidence/task-manager.png](evidence/task-manager.png), [evidence/process-explorer.png](evidence/process-explorer.png), [evidence/htop.png](evidence/htop.png). The Linux numbers come from `ps` and `/proc` ([evidence/part1-linux.txt](evidence/part1-linux.txt)).
 
