@@ -26,6 +26,8 @@ I started from the four roles and wrote for each one the load, the bottleneck an
 
 Alternatives I did not take: identical machines for everyone (wastes money on the accountant and underpowers the designer); Intel LGA 1700 with DDR4 (cheaper memory, but a dead end for upgrades); a more expensive GPU for the designer (does not fit in the budget).
 
+Check against the hard requirements: every machine has at least 16 GB of memory (16 GB for the accountant, 32 GB for the other three), a 1 TB SSD, a licensed Windows 11 Pro and a monitor. The grand total is 2 894 499 tenge, which is under 3 000 000 (105 501 tenge left). Totals per role: accountant 563 696, sales 659 557, web developer 704 928, designer 966 318.
+
 Answer 1. Which machine will I upgrade first in eighteen months? The web developer's machine: the memory, from 32 gb to 64 gb. Containers, VMs and databases grow every year and memory is the first thing to run out. The board has two free slots, so it costs only two more sticks and 5 minutes.
 
 Answer 2. Pre-built machines. I found one ready machine for each role. The prices, links and dates are in the table below. A ready machine does not include a monitor, and Windows is not always included, so for a fair comparison I compare only the computer itself plus Windows 11 Pro (46 800 tenge, from my budget.csv) when the pre-built one has no system.
@@ -54,7 +56,7 @@ Answer 3. The designer will complain first, about the graphics card: the RTX 506
 ## 4. Evidence
 
 - builds.md: the load, bottleneck and trade-off for each of the four machines.
-- budget.csv: every part with the price in tenge, the vendor link and the date. It proves the total is under 3,000,000 tenge.
+- budget.csv: every part with the price in tenge, the vendor link and the date, with a total per role and a grand total. It proves the total is under 3,000,000 tenge.
 - evidence/pcpartpicker-links.md: one PCPartPicker list per build. It proves the parts are compatible. PCPartPicker does not show tenge, so it is not used for prices.
 - evidence/vendor-quotes/: a screenshot of each price with the site and the date visible. It proves the price is real and from a vendor that delivers in Kazakhstan.
 
