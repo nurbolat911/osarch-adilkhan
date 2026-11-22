@@ -42,7 +42,11 @@ Week __ — `____` : [tools/____.md](tools/)
 
 | Assignment | Tool | What for |
 |------------|------|----------|
-| | | |
+| Lab 3 (teardown) | Claude (Claude Code) | explained the task, checked the evidence, drafted and corrected the README |
+| Lab 4 (storage) | Claude (Claude Code) | explained the steps, helped with errors, checked the evidence, drafted the README |
+| Lab 5 (encoding) | Claude (Claude Code) | explained the task, checked my outputs, drafted the README |
+| Lab 6 (processes) | Claude (Claude Code) | explained the task, checked the evidence, drafted the README |
+| Ticket 2 (office spec) | Claude (Claude Code) | helped plan the four builds, checked compatibility and the budget arithmetic, drafted README, builds.md and budget.csv from the prices I found |
 
 > Declaring this costs nothing. Not declaring it, when it comes up at the
 > defence, costs the assignment.
