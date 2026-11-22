@@ -13,7 +13,7 @@ Each screenshot proves that the price used in budget.csv was shown on a vendor s
 - psu-550w.png: price of the MSI MAG A550BN 550 W power supply (accountant, sales, web developer).
 - psu-650w.png: price of the MSI MAG A650BNL 650 W power supply (designer).
 - case-matx.png: price of the PCCooler C3 B310 case (all four builds).
-- monitor-24-ips.png: price of the 23.8 inch Vega VHF238-100CB monitor (accountant, sales).
+- monitor-23.8-ips.png: price of the 23.8 inch Vega VHF238-100CB monitor (accountant, sales).
 - monitor-27-qhd.png: price of the 27 inch Xiaomi A27Qi QHD monitor (web developer, designer).
 - os-windows11-pro.png: price of the Windows 11 Pro licence (all four builds).
 - keyboard.png: price of the keyboard (all four builds).
